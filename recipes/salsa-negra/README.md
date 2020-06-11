@@ -13,14 +13,14 @@ The basic principle of salsa negra as I make it (_negra_ means black) is blacken
 | 1     | Yellow (or white/silver) onion, quartered                               |
 | ~1-2  | Garlic cloves, hacked (can use pre-hacked, frozen Picard)               |
 | 1     | Lime, juiced                                                            |
-| ~20ml | Cilantro (coriander leaves), hacked (can use pre-hacked, frozen Picard) |
+| ~25ml | Cilantro (coriander leaves), hacked (can use pre-hacked, frozen Picard) |
 
 
 ## Preparation
 
-Pre-heat the oven to the hottest temperature, broiler setting. You can also use a bbq grill if you wish. One downside with using a bbq grill is that the juices leak down onto the flames; in the oven the tomatoes retain more of their juice and you can keep some of the tomato juice in the pan, scraped into the blender.
+Preheat the oven to the hottest temperature, broiler setting. You can also use a bbq grill if you wish. One downside with using a bbq grill is that the juices leak down onto the flames; in the oven the tomatoes retain more of their juice and you can keep some of the tomato juice in the pan, scraped into the blender.
 
-Slice the jalapeños longwise, remove the stems, scrape out the seeds (or leave them in if you want a spicier salsa). Place about 2/3 of the tomatoes and jalapeños (green side up) in an oven pan. Slide the pan in the oven, at the topmost position closest to the broiler coils. Let the tomatoes and jalapeños get _really_ black. Keep an eye on them, roll the tomatoes around to get a lot of black. The jalapeños will blacken quicker, remove them when they are totally black with some flesh left underneath. But the tomatoes will take longer. I think the last time I made the salsa it took around 30-45 minutes to get them nice and blackened. You can see in this picture that the jalapeños are done, but I put the tomatoes back in the oven and got them much more blackened!
+Slice the jalapeños lengthwise, remove the stems, scrape out the seeds (or leave them in if you want a spicier salsa). Place about 2/3 of the tomatoes and jalapeños (green side up) in an oven pan. Slide the pan in the oven, at the topmost position closest to the broiler coils. Let the tomatoes and jalapeños get _really_ black. Keep an eye on them, roll the tomatoes around to get a lot of black. The jalapeños will blacken quicker, remove them when they are totally black with some flesh left underneath. But the tomatoes will take longer. I think the last time I made the salsa it took around 30-45 minutes to get them nice and blackened. You can see in this picture that the jalapeños are done, but I put the tomatoes back in the oven to get them much more blackened!
 
 <img src="https://github.com/dfuchslin/content/raw/master/recipes/salsa-negra/not-enough-blackened.jpg" width="250" />
 
