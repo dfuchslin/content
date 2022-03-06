@@ -1,0 +1,80 @@
+baseURL = "https://david.gyttja.com"
+languageCode = "en-us"
+title = "gyttja"
+theme = "hugo-theme-basic"
+
+disableHugoGeneratorInject = true
+enableRobotsTXT = true
+
+# Required for using the Github style syntax
+[markup]
+defaultMarkdownHandler = "goldmark"
+
+[markup.goldmark]
+
+[markup.goldmark.extensions]
+definitionList = true
+footnote = true
+linkify = true
+strikethrough = true
+table = true
+taskList = true
+typographer = true
+
+[markup.goldmark.parser]
+attribute = true
+autoHeadingID = true
+
+[markup.goldmark.renderer]
+hardWraps = false
+unsafe = true
+xHTML = false
+
+[markup.highlight]
+codeFences = true
+hl_Lines = ""
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = true
+noClasses = true
+style = "github"
+tabWidth = 4
+
+[markup.tableOfContents]
+endLevel = 6
+startLevel = 2
+
+
+####
+#theme ="hugo-theme-basic"
+
+googleAnalytics = "UA-XXXXXXXXX-X"
+enableEmoji = true
+copyright = "© 2010-2022"
+description = "Basic personal site theme styled with minimal tachyons, syntax highlighting, and blog series configuration."
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[params]
+  titleEmoji = ":tada:"
+  # change this!
+  twitter = "dfuchslin"
+
+[Permalinks]
+  post = "post/:slug"
+
+[[params.menu]]
+  name = "blog"
+  url = "post/"
+
+[[params.menu]]
+  name = "post series"
+  url = "series/"
+
+
+[[params.menu]]
+  name = "about"
+  url = "about/"

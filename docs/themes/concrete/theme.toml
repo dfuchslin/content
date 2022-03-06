@@ -1,0 +1,66 @@
+name = "Accessible Minimalism"
+license = "Unlicense"
+licenselink = "https://unlicense.org/"
+description = "Minimalist Hugo theme with a penchant for accessibility"
+homepage = "https://github.com/leonstafford/accessible-minimalism-hugo-theme"
+tags = ["minimalist", "accessible", "simple"]
+features = ["For visually impaired readers and developers"]
+min_version = "0.68.0"
+
+[author]
+  name = "Leon Stafford"
+  homepage = "https://ljs.dev"
+
+
+# Add the site navigation links
+[menu]
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Blog"
+url = "/posts/"
+weight = 2
+
+
+
+# Required for using the Github style syntax
+[markup]
+defaultMarkdownHandler = "goldmark"
+
+[markup.goldmark]
+
+[markup.goldmark.extensions]
+definitionList = true
+footnote = true
+linkify = true
+strikethrough = true
+table = true
+taskList = true
+typographer = true
+
+[markup.goldmark.parser]
+attribute = true
+autoHeadingID = true
+
+[markup.goldmark.renderer]
+hardWraps = false
+unsafe = true
+xHTML = false
+
+[markup.highlight]
+codeFences = true
+hl_Lines = ""
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = true
+noClasses = true
+style = "github"
+tabWidth = 4
+
+[markup.tableOfContents]
+endLevel = 6
+startLevel = 2

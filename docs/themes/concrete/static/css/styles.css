@@ -1,0 +1,76 @@
+.header .title {
+    font-size: 6.4rem;
+    margin-bottom: 0;
+    font-weight: 800;
+}
+
+.header .menu {
+    margin: 5rem 0;
+}
+
+.leading-title {
+    text-align: left;
+    font-weight: 600;
+    margin: 5rem 0 2.5rem 0;
+}
+
+.post {
+    margin: 5rem 0;
+}
+
+.meta {
+    text-transform: uppercase;
+    font-size: 10pt;
+}
+
+.post a {
+    text-decoration: none;
+}
+
+.page-nav {
+    display: flex;
+    overflow: hidden;
+    margin: 1em 0;
+    align-items: center;
+}
+
+.page-nav a.button.prev {
+    margin-right: auto;
+}
+
+.page-nav a.button.next {
+    margin-left: auto;
+}
+
+footer {
+    text-align: right;
+    font-size: 10pt;
+}
+
+
+/* custom overrides */
+body {
+    font-size: 1.8rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+    padding: 0;
+}
+
+p {
+    line-height: 1.5;
+}
+
+pre {
+    border: none;
+}
+
+pre>code {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+}
+
+h2, h3, h4 {
+    margin-top: 4rem;
+}
