@@ -1,0 +1,94 @@
+body {
+  -webkit-font-smoothings: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  background-color: #eeeeee;
+  /* border-radius: 4px; */
+}
+
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  line-height: 1.4;
+  word-break: break-all;
+  word-wrap: break-word;
+  border: 1px solid #ccc;
+  /* border-radius: 4px; */
+}
+
+pre,
+code {
+  font-family: monocode, monospace;
+  -webkit-font-smoothings: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  border-bottom: 2px solid #ccc
+}
+
+header img {
+  width: 10%;
+}
+
+nav ul li {
+  display: inline;
+}
+
+
+/*  dark mode
+:root {
+  --background-color: #ffff;
+  --background-color-secondary: #ffff;
+  --border-color: #eee;
+
+  --text: #000;
+
+  --text-primary: #000;
+  --text-secondary: #000;
+  --text-header: #e7e7e8;
+  --text-link: #38b2ac;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-primary);
+}
+
+.bg-secondary {
+  background-color: var(--background-color-secondary);
+}
+
+.text-link {
+  color: var(--text-link);
+}
+
+.border-colour {
+  border-color: var(--border-color);
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #161625;
+    --background-color-secondary: #2d2d40;
+    --border-color: #15151e;
+
+    --text: #fff;
+
+    --text-primary: #fff;
+    --text-secondary: #b1b1b2;
+    --text-secondary: #e7e7e8;
+    --text-link: #38b2ac;
+  }
+}
+*/

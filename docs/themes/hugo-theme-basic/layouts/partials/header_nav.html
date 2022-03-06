@@ -1,0 +1,15 @@
+<header>
+  <nav id="nav">
+    <ul class="list pl0">
+      <!-- pages -->
+      <!-- prettier-ignore -->
+      {{ range .Site.Params.menu }}
+      <li class="b mv3">
+        <a class="f3 b pa1 black" href="{{ .url }}">{{ .name }}</a>
+      </li>
+      <!-- prettier-ignore -->
+      {{ end }}
+    </ul>
+  </nav>
+</header>
+
