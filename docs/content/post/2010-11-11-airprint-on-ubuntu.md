@@ -89,9 +89,9 @@ Allow @LOCAL
 &lt;/service-group&gt;
 </pre></li>
 	<li>Printed a page from iOS simulator
-<a href="https://david.gyttja.com/wp-content/uploads/2010/11/print-dn.png"><img class="alignnone size-full wp-image-9" title="AirPrinting DN från iOS simulator" src="https://david.gyttja.com/wp-content/uploads/2010/11/print-dn.png" alt="" width="630" height="816" /></a></li>
+<a href="/images/2010/11/print-dn.png"><img class="alignnone size-full wp-image-9" title="AirPrinting DN från iOS simulator" src="/images/2010/11/print-dn.png" alt="" width="630" height="816" /></a></li>
 	<li>Printed a page from iPhone 3GS with iOS 4.2.1:
-<img class="alignnone size-medium wp-image-93" title="iphone-airprint" src="https://david.gyttja.com/wp-content/uploads/2010/11/iphone-airprint.png?w=200" alt="" width="200" height="300" /></li>
+<img class="alignnone size-medium wp-image-93" title="iphone-airprint" src="/images/2010/11/iphone-airprint.png?w=200" alt="" width="200" height="300" /></li>
 	<li>Done!</li>
 </ul>
 I'm not sure if all printers will work out of the box with this configuration, but since my printer supports PostScript I assume it can rasterize pretty much anything iOS will send it. In any case, I didn't have to configure any filters or print settings. It just worked. Hopefully Apple won't further cripple AirPrinting by also "patching" iOS so that only HP ePrint devices are supported and it no longer recognizes Bonjour services with subtype <span style="font-family:Consolas, Monaco, 'Courier New', Courier, monospace;line-height:18px;font-size:12px;white-space:pre;">_universal._sub._ipp._tcp</span>. We'll see what happens!

@@ -16,7 +16,7 @@ Ok, it's not really Chrome's fault. But I really get annoyed when I happen to sw
 <!--more-->
 
 There's a global OSX touchpad setting for this (I'm still running Mountain Lion, but I assume Mavericks is the same), "Swipe between pages".
-<a href="https://david.gyttja.com/wp-content/uploads/2013/10/pageswipe.png"><img src="https://david.gyttja.com/wp-content/uploads/2013/10/pageswipe-300x247.png" alt="pageswipe" width="300" height="247" class="alignnone size-medium wp-image-289" /></a>
+<a href="/images/2013/10/pageswipe.png"><img src="/images/2013/10/pageswipe-300x247.png" alt="pageswipe" width="300" height="247" class="alignnone size-medium wp-image-289" /></a>
 
 But as I said, I just want to turn it off for Chrome. The solution:
 <pre code="bash">

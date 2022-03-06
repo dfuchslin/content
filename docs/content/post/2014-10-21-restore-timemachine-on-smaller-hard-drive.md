@@ -22,7 +22,7 @@ Now I have my Mac back, and to make things simple I thought I'd just do a TimeMa
 
 My TimeMachine backup is only ~150GB, so realistically I should be able to restore onto my 250GB hard drive. Googling around I found that if you happen to have exluded items in your TimeMachine configuration, the total size of those items may be included in some metadata somewhere in your TimeMachine backup, thus increasing the required size for restore (even though those files are not at all backed up).
 
-<a href="https://david.gyttja.com/wp-content/uploads/2014/10/tm-ignore.png"><img src="https://david.gyttja.com/wp-content/uploads/2014/10/tm-ignore-300x214.png" alt="timemachine excluded items" width="300" height="214" class="aligncenter size-medium wp-image-379" /></a>
+<a href="/images/2014/10/tm-ignore.png"><img src="/images/2014/10/tm-ignore-300x214.png" alt="timemachine excluded items" width="300" height="214" class="aligncenter size-medium wp-image-379" /></a>
 
 In my case, I have 120GB of virtual machines (various databases, OSes, snapshots, etc) excluded from my backup. I usually keep them on a USB3 external drive, but since I had a 1TB drive for a week, I decided to move them to the primary hard drive. So, now I have copied the VMs back to the external drive, removed them from the main hard drive, and performed a TimeMachine backup.
 

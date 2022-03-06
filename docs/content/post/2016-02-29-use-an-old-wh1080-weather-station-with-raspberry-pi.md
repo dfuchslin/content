@@ -15,7 +15,7 @@ url: /2016/02/29/use-an-old-wh1080-weather-station-with-raspberry-pi/
 
 I have an <a href="http://www.clasohlson.com/se/Väderstation-med-pekskärm/Pr363242000" target="_blank">old WH1080 weather station</a> and was thinking, "I bet I could wire up a 433MHz receiver to an arduino or raspberry pi and read the wireless sensors to chart the weather data". I found lots of links for reading the wireless sensors, but then I looked closely at my weather station display and noticed the USB port: I had forgotten that there was a port there! Excellent! Problem solved, and I could solve it without extra hardware!
 
-<a href="https://david.gyttja.com/wp-content/uploads/2016/02/wh1080.jpg" rel="attachment wp-att-414"><img src="https://david.gyttja.com/wp-content/uploads/2016/02/wh1080-300x225.jpg" alt="wh1080" width="300" height="225" class="alignleft size-medium wp-image-414" /></a>
+<a href="/images/2016/02/wh1080.jpg" rel="attachment wp-att-414"><img src="/images/2016/02/wh1080-300x225.jpg" alt="wh1080" width="300" height="225" class="alignleft size-medium wp-image-414" /></a>
 
 I found a <a href="http://blog.schwabl.net/2013/02/21/wfrog-on-a-raspberry-pi-visualize-wh1080-weather-station/" target="_blank">great, oldish blog entry</a> to help me out with the basic steps of reading the data via USB on a raspberry pi. The code dependencies that were manually compiled in that link are now included in the latest raspbian distro (jessie), so those manual compilation steps are no longer necessary.
 
@@ -97,7 +97,7 @@ Then, start wfrog again manually to create the configuration file:
 
 * Done! Or almost... a few hours later I noticed a bug while perusing the logs (/var/log/wfrog.log), and repaired it <a href="https://github.com/wfrog/wfrog/issues/106" target="_blank">with help from this comment</a>. Hopefully in a future version this gets patched, otherwise I'll manually make the change again.
 
-<a href="https://david.gyttja.com/wp-content/uploads/2016/02/wfrog.png" rel="attachment wp-att-411"><img src="https://david.gyttja.com/wp-content/uploads/2016/02/wfrog-300x292.png" alt="wfrog report" width="300" height="292" class="alignleft size-medium wp-image-411" /></a>
+<a href="/images/2016/02/wfrog.png" rel="attachment wp-att-411"><img src="/images/2016/02/wfrog-300x292.png" alt="wfrog report" width="300" height="292" class="alignleft size-medium wp-image-411" /></a>
 
 On a sidenote, now that I have graphs and historical sensor data, one interesting thing I noticed is that in the middle of the day, the temperature spikes up to nearly 15˚C, which it most definitely is not. We've had some very beautiful and sunny days these past few days in Stockholm, but not that warm... I think I'll have to move the temperature sensor out of the direct sunlight, and see if that helps prevent these spikes.
 

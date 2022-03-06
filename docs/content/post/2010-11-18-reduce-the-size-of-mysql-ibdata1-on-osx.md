@@ -19,11 +19,11 @@ So I finally figured out why my TimeMachine backups were becoming bigger and big
 I did some digging and found this interesting tutorial on <a title="Howto: Clean a mysql InnoDB storage engine?" href="http://stackoverflow.com/questions/3927690/howto-clean-a-mysql-innodb-storage-engine" target="_blank">how to clean up InnoDB storage files</a>.  Here I'll explain what I specifically did on my OSX 10.6.5 machine with MySQL v5.1.38.
 <ol>
 	<li>If you're not a cowboy, stop MySQL, backup all files, then start MySQL again (I used the System pref to stop/start MySQL, feel free to use the command-line instead):
-<img src="https://david.gyttja.com/wp-content/uploads/2010/11/mysql-stop-pref.png" alt="" title="mysql-stop-pref" width="630" height="150" class="alignnone size-full wp-image-85" />
+<img src="/images/2010/11/mysql-stop-pref.png" alt="" title="mysql-stop-pref" width="630" height="150" class="alignnone size-full wp-image-85" />
 <pre language="bash">
 $ sudo cp -R /usr/local/mysql/data /usr/local/mysql/data.bak
 </pre>
-<img src="https://david.gyttja.com/wp-content/uploads/2010/11/mysql-start-pref.png" alt="" title="mysql-start-pref" width="630" height="150" class="alignnone size-full wp-image-84" />
+<img src="/images/2010/11/mysql-start-pref.png" alt="" title="mysql-start-pref" width="630" height="150" class="alignnone size-full wp-image-84" />
 	</li>
 	<li>Export all data from MySQL:
 <pre language="bash">

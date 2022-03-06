@@ -22,7 +22,7 @@ It's happened to me twice now: CrashPlan stops backing up my files apparently du
 I have CrashPlan installed on my QNAP (see <a href="https://david.gyttja.com/2011/10/09/crashplan-on-qnap/" title="CrashPlan on QNAP">my previous post about that</a>), and CrashPlan smartly autoupdates their software every now and then. Unfortunately this autoupdate doesn't seem to work when installed on QNAP. The following instructions should help get CrashPlan updated and running again smoothly.
 
 Connect to the CrashPlan server running on QNAP by first creating an SSH tunnel to QNAP and then open the GUI client locally (connecting to the CrashPlan server through the ssh tunnel). The GUI reports that "CrashPlan Upgrade Failed. CrashPlan failed to apply an upgrade and will try again automatically in one hour..."
-<a href="https://david.gyttja.com/wp-content/uploads/2012/12/crashplanupgradefailed.png" rel="lightbox"><img src="https://david.gyttja.com/wp-content/uploads/2012/12/crashplanupgradefailed.png?w=300" alt="crashplanupgradefailed" width="300" height="237" class="alignnone size-medium wp-image-196" /></a>
+<a href="/images/2012/12/crashplanupgradefailed.png" rel="lightbox"><img src="/images/2012/12/crashplanupgradefailed.png?w=300" alt="crashplanupgradefailed" width="300" height="237" class="alignnone size-medium wp-image-196" /></a>
 
 How to upgrade (I had version 3.2.1 installed, version 3.4.1 was available):
 <ul>
@@ -72,8 +72,8 @@ Do you accept and agree to be bound by the EULA? (yes/no) yes
 What directory do you wish to install CrashPlan to? [/root/crashplan] /opt/crashplan
 /opt/crashplan does not exist.  Create /opt/crashplan? (y/n) [y] y
 
-What directory do you wish to store backups in? [/opt/crashplan/manifest]  
-/opt/crashplan/manifest does not exist.  Create /opt/crashplan/manifest? (y/n) [y] 
+What directory do you wish to store backups in? [/opt/crashplan/manifest]
+/opt/crashplan/manifest does not exist.  Create /opt/crashplan/manifest? (y/n) [y]
 
 Your selections:
 CrashPlan will install to: /opt/crashplan
@@ -114,7 +114,7 @@ $ /share/MD0_DATA/.qpkg/crashplan/cprun.sh start
 </li>
 <li>
 Connect from the client and verify in the GUI that the server is now working:
-<a href="https://david.gyttja.com/wp-content/uploads/2012/12/crashplanupgradesuccessful1.png"><img src="https://david.gyttja.com/wp-content/uploads/2012/12/crashplanupgradesuccessful1.png?w=300" alt="crashplanupgradesuccessful" width="300" height="237" class="alignnone size-medium wp-image-200" /></a>
+<a href="/images/2012/12/crashplanupgradesuccessful1.png"><img src="/images/2012/12/crashplanupgradesuccessful1.png?w=300" alt="crashplanupgradesuccessful" width="300" height="237" class="alignnone size-medium wp-image-200" /></a>
 </li>
 <li>
 And finally, clean up the unused, old crashplan backup (mine was 2.1GB as there seemed to be 100s of failed yet downloaded upgrade attempts):

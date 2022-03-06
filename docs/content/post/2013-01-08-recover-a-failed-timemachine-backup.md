@@ -18,7 +18,7 @@ url: /2013/01/08/recover-a-failed-timemachine-backup/
 I recently received an unpleasant warning message after TimeMachine routinely tried to perform a backup:
 <blockquote>Time Machine completed a verification of your backups on “matmos”. To improve reliability, Time Machine must create a new backup for you.
 Click Start New Backup to create a new backup. This will remove your existing backup history. This could take several hours.
-Click Back Up Later to be reminded tomorrow. Time Machine won’t perform backups during this time.<a href="https://david.gyttja.com/wp-content/uploads/2013/01/tm-0-warning.png"><img class="size-medium wp-image-209" alt="Time Machine completed a verification of your backups on 'matmos'. To improve reliability, Time Machine must create a new backup for you.  Click Start New Backup to create a new backup. This will remove your existing backup history. This could take several hours.  Click Back Up Later to be reminded tomorrow. Time Machine won’t perform backups during this time." src="https://david.gyttja.com/wp-content/uploads/2013/01/tm-0-warning.png?w=300" width="300" height="206" /></a></blockquote>
+Click Back Up Later to be reminded tomorrow. Time Machine won’t perform backups during this time.<a href="/images/2013/01/tm-0-warning.png"><img class="size-medium wp-image-209" alt="Time Machine completed a verification of your backups on 'matmos'. To improve reliability, Time Machine must create a new backup for you.  Click Start New Backup to create a new backup. This will remove your existing backup history. This could take several hours.  Click Back Up Later to be reminded tomorrow. Time Machine won’t perform backups during this time." src="/images/2013/01/tm-0-warning.png?w=300" width="300" height="206" /></a></blockquote>
 
 <!--more-->
 
@@ -32,8 +32,8 @@ $ sudo chflags nouchg /Volumes/TimeMachine-David/fünke.sparsebundle
 $ sudo chflags nouchg /Volumes/TimeMachine-David/fünke.sparsebundle/token
 
 $ sudo hdiutil attach -nomount -noverify -readwrite -noautofsck /Volumes/TimeMachine-David/fünke.sparsebundle
-/dev/disk2          	GUID_partition_scheme          	
-/dev/disk2s1        	EFI                            	
+/dev/disk2          	GUID_partition_scheme
+/dev/disk2s1        	EFI
 /dev/disk2s2        	Apple_HFS
 </pre>
 </li>
@@ -55,19 +55,19 @@ journal_replay(/dev/disk2s2) returned 0
 ** Checking Journaled HFS Plus volume.
    Invalid number of allocation blocks
 (4294967295, 0)
-	IVChk - volume header total allocation blocks is greater than device size 
-	volume allocation block count 102374400 device allocation block count 97630464 
+	IVChk - volume header total allocation blocks is greater than device size
+	volume allocation block count 102374400 device allocation block count 97630464
 ** The volume could not be verified completely.
-	volume check failed with error 7 
-	volume type is pure HFS+ 
-	primary MDB is at block 0 0x00 
-	alternate MDB is at block 0 0x00 
-	primary VHB is at block 2 0x02 
-	alternate VHB is at block 781043710 0x2e8dc7fe 
-	sector size = 512 0x200 
-	VolumeObject flags = 0x07 
-	total sectors for volume = 781043712 0x2e8dc800 
-	total sectors for embedded volume = 0 0x00 
+	volume check failed with error 7
+	volume type is pure HFS+
+	primary MDB is at block 0 0x00
+	alternate MDB is at block 0 0x00
+	primary VHB is at block 2 0x02
+	alternate VHB is at block 781043710 0x2e8dc7fe
+	sector size = 512 0x200
+	VolumeObject flags = 0x07
+	total sectors for volume = 781043712 0x2e8dc800
+	total sectors for embedded volume = 0 0x00
 CheckHFS returned -1317, fsmodified = 1
 </pre>
 </li>
@@ -89,23 +89,23 @@ I tried restoring the failed sparsebundle to a new sparsebundle while both were 
 With the failed sparsebundle no longer in my TimeMachine network share, I created a new sparsebundle. Since I encrypt my backups, I used TimeMachine to create a new sparsebundle on the network share:
 <ul>
 <li>Enable TimeMachine, select the network share, select "encrypt backups", then "use disk"
-<a href="https://david.gyttja.com/wp-content/uploads/2013/01/tm-1-selectdisk.png"><img src="https://david.gyttja.com/wp-content/uploads/2013/01/tm-1-selectdisk.png?w=300" alt="select network share in TimeMachine" width="300" height="214" class="alignnone size-medium wp-image-223" /></a>
+<a href="/images/2013/01/tm-1-selectdisk.png"><img src="/images/2013/01/tm-1-selectdisk.png?w=300" alt="select network share in TimeMachine" width="300" height="214" class="alignnone size-medium wp-image-223" /></a>
 </li>
 <li>
 Provide encryption password:
-<a href="https://david.gyttja.com/wp-content/uploads/2013/01/tm-1-encrypt.png"><img src="https://david.gyttja.com/wp-content/uploads/2013/01/tm-1-encrypt.png?w=300" alt="create sparsebundle encryption key" width="300" height="214" class="alignnone size-medium wp-image-222" /></a>
+<a href="/images/2013/01/tm-1-encrypt.png"><img src="/images/2013/01/tm-1-encrypt.png?w=300" alt="create sparsebundle encryption key" width="300" height="214" class="alignnone size-medium wp-image-222" /></a>
 </li>
 <li>Let the backup run, then cancel after a few minutes. This will create a new sparsebundle on the network share.
-<a href="https://david.gyttja.com/wp-content/uploads/2013/01/tm-1-cancel.png"><img src="https://david.gyttja.com/wp-content/uploads/2013/01/tm-1-cancel.png?w=300" alt="backing up..." width="300" height="119" class="alignnone size-medium wp-image-221" /></a>
+<a href="/images/2013/01/tm-1-cancel.png"><img src="/images/2013/01/tm-1-cancel.png?w=300" alt="backing up..." width="300" height="119" class="alignnone size-medium wp-image-221" /></a>
 </li>
 </ul>
 <h3>Mount both sparsebundles</h3>
 <ul>
 <li>Mount the failed sparsebundle (from the external/USB drive). Unfortunately, you can't use the paste command in the encryption password field :(
-<a href="https://david.gyttja.com/wp-content/uploads/2013/01/tm-2-key.png"><img src="https://david.gyttja.com/wp-content/uploads/2013/01/tm-2-key.png?w=300" alt="field does not allow pasting!" width="300" height="196" class="alignnone size-medium wp-image-226" /></a>
+<a href="/images/2013/01/tm-2-key.png"><img src="/images/2013/01/tm-2-key.png?w=300" alt="field does not allow pasting!" width="300" height="196" class="alignnone size-medium wp-image-226" /></a>
 </li>
 <li>Note that the sparsebundle will be mounted read-only (which is just fine):
-<a href="https://david.gyttja.com/wp-content/uploads/2013/01/tm-2-warning.png"><img src="https://david.gyttja.com/wp-content/uploads/2013/01/tm-2-warning.png?w=300" alt="Mac OSX can&#039;t repair the disk &#039;Time Machine Backups&#039;. You can still open or copy files on the disk, but you can&#039;t save changes to files on the disk. Back up the disk and reformat it as soon as you can." width="300" height="164" class="alignnone size-medium wp-image-227" /></a>
+<a href="/images/2013/01/tm-2-warning.png"><img src="/images/2013/01/tm-2-warning.png?w=300" alt="Mac OSX can&#039;t repair the disk &#039;Time Machine Backups&#039;. You can still open or copy files on the disk, but you can&#039;t save changes to files on the disk. Back up the disk and reformat it as soon as you can." width="300" height="164" class="alignnone size-medium wp-image-227" /></a>
 </li>
 <li>
 Now that both sparsebundles are mounted and have the same name (Time Machine Backups), we need to make sure we know which is the source (external drive) and which is the destination (network share). A little commandline magic:
@@ -126,29 +126,29 @@ Open "SuperDuper!"
 Select copy: "Time Machine Backups"
 to: "Time Machine Backups 1"
 using: "Backup - all files"
-<a href="https://david.gyttja.com/wp-content/uploads/2013/01/tm-3-sd1.png"><img src="https://david.gyttja.com/wp-content/uploads/2013/01/tm-3-sd1.png?w=300" alt="SuperDuper" width="300" height="230" class="alignnone size-medium wp-image-232" /></a>
+<a href="/images/2013/01/tm-3-sd1.png"><img src="/images/2013/01/tm-3-sd1.png?w=300" alt="SuperDuper" width="300" height="230" class="alignnone size-medium wp-image-232" /></a>
 </li>
 <li>
 Select "Options..." and choose "Smart Update" (this prevents SuperDuper from reformatting the destination sparsebundle, ask me how i know ;) )
-<a href="https://david.gyttja.com/wp-content/uploads/2013/01/tm-3-sd2.png"><img src="https://david.gyttja.com/wp-content/uploads/2013/01/tm-3-sd2.png?w=291" alt="Smart Update" width="291" height="300" class="alignnone size-medium wp-image-233" /></a>
+<a href="/images/2013/01/tm-3-sd2.png"><img src="/images/2013/01/tm-3-sd2.png?w=291" alt="Smart Update" width="291" height="300" class="alignnone size-medium wp-image-233" /></a>
 </li>
 <li>
 Advanced options are left as the default:
-<a href="https://david.gyttja.com/wp-content/uploads/2013/01/tm-3-sd3.png"><img src="https://david.gyttja.com/wp-content/uploads/2013/01/tm-3-sd3.png?w=291" alt="tm-3-sd3" width="291" height="300" class="alignnone size-medium wp-image-234" /></a>
+<a href="/images/2013/01/tm-3-sd3.png"><img src="/images/2013/01/tm-3-sd3.png?w=291" alt="tm-3-sd3" width="291" height="300" class="alignnone size-medium wp-image-234" /></a>
 </li>
 <li>
 Start the copy process:
-<a href="https://david.gyttja.com/wp-content/uploads/2013/01/tm-3-sd4.png"><img src="https://david.gyttja.com/wp-content/uploads/2013/01/tm-3-sd4.png?w=300" alt="Start copy" width="300" height="230" class="alignnone size-medium wp-image-235" /></a>
+<a href="/images/2013/01/tm-3-sd4.png"><img src="/images/2013/01/tm-3-sd4.png?w=300" alt="Start copy" width="300" height="230" class="alignnone size-medium wp-image-235" /></a>
 </li>
 <li>
 Let it run for a long time...
-<a href="https://david.gyttja.com/wp-content/uploads/2013/01/tm-3-sd5.png"><img src="https://david.gyttja.com/wp-content/uploads/2013/01/tm-3-sd5.png?w=300" alt="running" width="300" height="246" class="alignnone size-medium wp-image-236" /></a>
-<a href="https://david.gyttja.com/wp-content/uploads/2013/01/tm-3-sd6.png"><img src="https://david.gyttja.com/wp-content/uploads/2013/01/tm-3-sd6.png?w=300" alt="done" width="300" height="240" class="alignnone size-medium wp-image-237" /></a>
+<a href="/images/2013/01/tm-3-sd5.png"><img src="/images/2013/01/tm-3-sd5.png?w=300" alt="running" width="300" height="246" class="alignnone size-medium wp-image-236" /></a>
+<a href="/images/2013/01/tm-3-sd6.png"><img src="/images/2013/01/tm-3-sd6.png?w=300" alt="done" width="300" height="240" class="alignnone size-medium wp-image-237" /></a>
 </li>
 </ul>
 <h3>Enable TimeMachine</h3>
 Enable TimeMachine and start the backups. When the backups first started, the "Oldest backup" date was not listed. But when the backup finished, TimeMachine successfully recognized the oldest backup. Success!
-<a href="https://david.gyttja.com/wp-content/uploads/2013/01/tm-4-backup.png"><img src="https://david.gyttja.com/wp-content/uploads/2013/01/tm-4-backup.png?w=300" alt="Backing up" width="300" height="214" class="alignnone size-medium wp-image-238" /></a>
-<a href="https://david.gyttja.com/wp-content/uploads/2013/01/tm-4-done.png"><img src="https://david.gyttja.com/wp-content/uploads/2013/01/tm-4-done.png?w=300" alt="done!" width="300" height="214" class="alignnone size-medium wp-image-240" /></a>
+<a href="/images/2013/01/tm-4-backup.png"><img src="/images/2013/01/tm-4-backup.png?w=300" alt="Backing up" width="300" height="214" class="alignnone size-medium wp-image-238" /></a>
+<a href="/images/2013/01/tm-4-done.png"><img src="/images/2013/01/tm-4-done.png?w=300" alt="done!" width="300" height="214" class="alignnone size-medium wp-image-240" /></a>
 
 <em>Updated 2013-07-06: updated fsck step to not be recursive, can try to run fsck multiple times, thanks to comments!</em>

@@ -21,10 +21,10 @@ So my solution until Apple fixes their memory leak: every now and then manually 
 
 You can see in the screenshots below that I recovered &gt; 7GB disk space used by the memory hog socketfilterfw by restarting the firewall.
 
-<a href="https://david.gyttja.com/wp-content/uploads/2013/06/before.png"><img class="alignnone size-medium wp-image-256" alt="before" src="https://david.gyttja.com/wp-content/uploads/2013/06/before.png?w=300" width="300" height="188" /></a>
+<a href="/images/2013/06/before.png"><img class="alignnone size-medium wp-image-256" alt="before" src="/images/2013/06/before.png?w=300" width="300" height="188" /></a>
 
-<a href="https://david.gyttja.com/wp-content/uploads/2013/06/memoryhog.png"><img class="alignnone size-medium wp-image-257" alt="memoryhog" src="https://david.gyttja.com/wp-content/uploads/2013/06/memoryhog.png?w=300" width="300" height="234" /></a>
+<a href="/images/2013/06/memoryhog.png"><img class="alignnone size-medium wp-image-257" alt="memoryhog" src="/images/2013/06/memoryhog.png?w=300" width="300" height="234" /></a>
 
-<a href="https://david.gyttja.com/wp-content/uploads/2013/06/after.png"><img class="alignnone size-medium wp-image-255" alt="after" src="https://david.gyttja.com/wp-content/uploads/2013/06/after.png?w=300" width="300" height="188" /></a>
+<a href="/images/2013/06/after.png"><img class="alignnone size-medium wp-image-255" alt="after" src="/images/2013/06/after.png?w=300" width="300" height="188" /></a>
 
 I wonder what would happen if I left my machine on for an extended amount of time (talking many weeks here) without restarting? I bet socketfilterfw would eat up all the free space on my hard drive. Sounds like a challenge: maybe I'll leave my machine on during my summer vacation and see what happens...

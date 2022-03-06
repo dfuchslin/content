@@ -59,7 +59,7 @@ img {
 
 main {
   margin: auto; /* 1 */
-  max-width: 66rem; /* 2 */
+  max-width: 88rem; /* 2 */
   padding: 0 1rem; /* 2 */
   width: 100%; /* 2 */
 }

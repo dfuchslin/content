@@ -20,4 +20,4 @@ Anyway, as the Hybris community is such a closed community I thought I'd share t
 The script: <a href="https://github.com/dfuchslin/hybris-tools/tree/master/dependency-graph" target="_blank">https://github.com/dfuchslin/hybris-tools/tree/master/dependency-graph</a>
 
 Sample dependency graph output:
-<a href="https://david.gyttja.com/wp-content/uploads/2015/05/extensions.svg"><img src="https://david.gyttja.com/wp-content/uploads/2015/05/extensions.svg" alt="extensions" width="830" height="418" class="aligncenter size-medium wp-image-392" /></a>
+<a href="/images/2015/05/extensions.svg"><img src="/images/2015/05/extensions.svg" alt="extensions" width="830" height="418" class="aligncenter size-medium wp-image-392" /></a>

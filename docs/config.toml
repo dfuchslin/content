@@ -1,6 +1,7 @@
 baseURL = "https://david.gyttja.com"
 languageCode = "en-us"
 title = "gyttja"
+#theme = "concrete"
 theme = "hugo-theme-basic"
 
 disableHugoGeneratorInject = true
@@ -49,7 +50,7 @@ startLevel = 2
 #theme ="hugo-theme-basic"
 
 googleAnalytics = "UA-XXXXXXXXX-X"
-enableEmoji = true
+enableEmoji = false
 copyright = "© 2010-2022"
 description = "Basic personal site theme styled with minimal tachyons, syntax highlighting, and blog series configuration."
 
@@ -66,15 +67,16 @@ description = "Basic personal site theme styled with minimal tachyons, syntax hi
 [Permalinks]
   post = "post/:slug"
 
-[[params.menu]]
-  name = "blog"
-  url = "post/"
 
 [[params.menu]]
-  name = "post series"
-  url = "series/"
+  name = "posts"
+  url = "/posts/"
+
+[[params.menu]]
+  name = "categories"
+  url = "/categories/"
 
 
 [[params.menu]]
   name = "about"
-  url = "about/"
+  url = "/about/"
