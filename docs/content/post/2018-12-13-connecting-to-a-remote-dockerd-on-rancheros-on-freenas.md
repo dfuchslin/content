@@ -15,7 +15,7 @@ url: /2018/12/13/connecting-to-a-remote-dockerd-on-rancheros-on-freenas/
 
 
 
-Last summer I migrated from an old QNAP NAS to FreeNAS. I also started using docker containers with RancherOS, via<a href="https://www.ixsystems.com/documentation/freenas/11/vms.html#docker-rancher-vm"> the FreeNAS-provided virtual machine image</a>. I initially installed all my containers using the RancherOS cli (ssh into the machine), but now I am moving my container configurations out of the VM cli and versioning them so that I can at any point rebuild (or upgrade) the RancherOS disk image, and be able to reload all my containers. So I want to be able to run docker commands from my localhost cli, but have them be run on the RancherOS docker daemon.
+Last summer I migrated from an old QNAP NAS to FreeNAS. I also started using docker containers with RancherOS, via [the FreeNAS-provided virtual machine image](https://www.ixsystems.com/documentation/freenas/11/vms.html#docker-rancher-vm). I initially installed all my containers using the RancherOS cli (ssh into the machine), but now I am moving my container configurations out of the VM cli and versioning them so that I can at any point rebuild (or upgrade) the RancherOS disk image, and be able to reload all my containers. So I want to be able to run docker commands from my localhost cli, but have them be run on the RancherOS docker daemon.
 
 <!--more-->
 
@@ -26,7 +26,7 @@ To simplify life, copy your public ssh key to the RancherOS VM to enable passwor
 ssh-copy-id rancher@<rancheros-ip>
 ```
 
-From MacOS with docker installed, run <a href="https://docs.docker.com/machine/drivers/generic/#example">the following command</a> to set up a docker connection from localhost to RancherOS, as well as magically open dockerd for TCP connections on port 2376 on the RancherOS VM:
+From MacOS with docker installed, run [the following command](https://docs.docker.com/machine/drivers/generic/#example) to set up a docker connection from localhost to RancherOS, as well as magically open dockerd for TCP connections on port 2376 on the RancherOS VM:
 
 ```bash
 docker-machine create \
@@ -65,7 +65,7 @@ eval "$(docker-machine env -u)"
 
 ## Upcoming changes
 
-Starting with <a href="https://docs.docker.com/engine/release-notes/#1809">Docker 18.09</a>, connecting to a remote docker can be done much more easily as <a href="https://github.com/docker/cli/pull/1014">ssh connections are supported in the `DOCKER_HOST` variable</a>! So that means all of the above can be replaced by just a simple export:
+Starting with [Docker 18.09](https://docs.docker.com/engine/release-notes/#1809), connecting to a remote docker can be done much more easily as [ssh connections are supported in the `DOCKER_HOST` variable](https://github.com/docker/cli/pull/1014)! So that means all of the above can be replaced by just a simple export:
 
 ```bash
 export DOCKER_HOST=ssh://rancher@<rancheros-ip>
