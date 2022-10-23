@@ -1,9 +1,8 @@
 baseURL: https://david.gyttja.com
 languageCode: en-us
-title: gyttja
+title: "gyttja:david"
 theme: etch
 disableHugoGeneratorInject: true
-enableRobotsTXT: true
 enableEmoji: false
 copyright: © 2010-2022
 description: Basic personal site theme styled with minimal tachyons, syntax
@@ -51,13 +50,21 @@ params:
     light: friendly
     dark: native
   twitter: dfuchslin
-  menu:
-    - name: posts
-      url: /posts/
-    - name: categories
-      url: /categories/
-    - name: about
-      url: /about/
+
+menu:
+  main:
+  - identifier: posts
+    name: posts
+    url: /
+    weight: -120
+  - identifier: categories
+    name: categories
+    url: /categories/
+    weight: -110
+  - identifier: about
+    name: about
+    url: /about/
+    weight: -100
 
 Permalinks:
   post: post/:slug
